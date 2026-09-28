@@ -1,0 +1,39 @@
+## Problem 1
+
+Problem 1: Even or Odd
+
+Input:
+a number
+
+Processing:
+check whether its even or odd by taking mod 2
+
+Output:
+It' even or odd
+
+Pseudocode:
+1.take a number as input from user
+2. take num%2
+3. if it's equal to 0 mark it as even else odd
+4. display the result to user
+
+
+
+## Problem 2: Largest of 3 Numbers
+
+Input:
+take 3 numbers as input
+
+Processing:
+take 1 number and check if its largest than all
+repeat until largest is found
+
+Output:
+Largest number
+
+Pseudocode:
+1. ask user to enter 3 numbers
+2. if first >= second AND first >= third
+3. elif second >= first AND second >= third
+4. else largest =third
+5. print largest
