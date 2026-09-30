@@ -4,16 +4,23 @@ import json
 filepath=Path("data")/"inventory.json"
 
 def get_inventory():
-    with open(filepath, "r") as file:
-        inventory = json.load(file)
-    return inventory
+    try:
+        with open(filepath, "r") as file: 
+            inventory = json.load(file)
+    except FileNotFoundError:
+        print("File not found")
+    else:
+        return inventory
 
 
 def add():
     inventory=get_inventory()
-    name=input("Enter product name: ")
-    price=int(input("Enter product price: "))
-    quantity=int(input("Enter product quantity:"))
+    try:
+        name=input("Enter product name: ")
+        price=int(input("Enter product price: "))
+        quantity=int(input("Enter product quantity:"))
+    except ValueError:
+        print("Please enter valid values")
 
     product={
         "id":len(inventory)+1,
