@@ -1,4 +1,4 @@
-from .Expense_tracker import add_expense,delete_expense,view_expense,calculate_expense,calculate_expense_by_category
+from Expense_tracker import add_expense,delete_expense,view_expense,calculate_expense,calculate_expense_by_category
 
 cont=True
 while cont:
